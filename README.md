@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/twonull/nullptrs">
-    <img src="https://github.com/twonull/nullptrs/app/icon.svg" alt="" width="80" height="80">
+    <img src="https://github.com/TwoNull/nullptrs/blob/main/app/icon.svg" alt="" width="80" height="80">
   </a>
 
 <h3 align="center">NULLPTRS.CO</h3>
