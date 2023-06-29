@@ -10,7 +10,7 @@
     A personal portfolio to showcase various projects and writeups
     <br />
     <br />
-    <a href="https://nullptrs.co/"><strong>Visit the Site »</strong></a>
+    <a href="https://nullptrs.co/" target="_blank" rel="noopener noreferrer"><strong>Visit the Site »</strong></a>
     <br />
   </p>
 </div>
