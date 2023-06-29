@@ -53,7 +53,7 @@ Below are the prerequisites to build this website from source.
    ```
    <br />
 3. Rename `.env.example` to `.env.local` and fill the required fields. You will need to create your own Sanity project and populate it according to the schemas in `sanity/schemas/`
-    <br />
+<br />
 4. Build the Next.js site
    ```sh
    $ npm run build
