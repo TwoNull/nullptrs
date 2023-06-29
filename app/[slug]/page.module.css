@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    justify-content: top;
+    align-items: left;
+    flex: none;
+    padding: 2rem 2rem;
+    max-width: 900px;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.main p {
+    text-indent: 2em;
+}
+
+.titlebox {
+    align-items: left;
+    margin-bottom: 2rem;
+}
