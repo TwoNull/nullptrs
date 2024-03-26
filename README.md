@@ -1,2 +1,2 @@
 # NULLPTRS
-Personal website and portfolio
+Personal Portfolio | [nullptrs.co](https://nullptrs.co)

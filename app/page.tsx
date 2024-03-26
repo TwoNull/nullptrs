@@ -1,5 +1,5 @@
 import Scene from "./components/scene";
-import { GitHub, Linkedin } from "react-feather"
+import { GitHub, Linkedin, Twitter } from "react-feather"
 
 export default function Home() {
     return (
@@ -64,8 +64,8 @@ export default function Home() {
                         <h1 className="text-2xl font-semibold text-neutral-950">Projects</h1>
                         <hr/>
                     </div>
-                    <span className="text-sm">
-                        <a href="https://twitter.nullptrs.co"  target="_blank" rel="noopener noreferrer">Twitter Video Downloader</a>{" | "}<a href="https://github.com/TwoNull/twitter-downloader"  target="_blank" rel="noopener noreferrer">Repo</a>
+                    <span className="text-sm flex gap-2">
+                        <a className="flex items-center gap-2" href="https://twitter.nullptrs.co"  target="_blank" rel="noopener noreferrer"><Twitter size={14} /> Twitter Video Downloader</a>{" | "}<a href="https://github.com/TwoNull/twitter-downloader" className="flex items-center gap-2"  target="_blank" rel="noopener noreferrer"><GitHub size={14} /> Repo</a>
                     </span>
                 </div>
             </div>
