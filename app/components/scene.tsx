@@ -1,8 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import Image from "next/image"
+import { useRef, useState, useEffect } from "react";
 import { useFrame, Canvas } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
+import WebGL from "three/addons/capabilities/WebGL.js";
 
 function Model() {
     const ref: { current: any | null } = useRef();
@@ -25,15 +27,38 @@ function Model() {
 }
 
 export default function Scene() {
+    const [webglEnabled, setWebglEnabled] = useState(true)
+ 
+    useEffect(() => {
+        if (!WebGL.isWebGLAvailable()) {
+            setWebglEnabled(false)
+        }
+    }, [])
+
+    if (webglEnabled) {
+        return (
+            <Canvas color={"#fafafa"} camera={{ position: [0, 0, 8], aspect: 1}}>
+                <directionalLight
+                    castShadow
+                    position={[0, 12, 12]}
+                    intensity={100}
+                    color={"#fafafa"}
+                />
+                <Model />
+            </Canvas>
+        );
+    }
     return (
-        <Canvas color={"#fafafa"} camera={{ position: [0, 0, 8], aspect: 1}}>
-            <directionalLight
-                castShadow
-                position={[0, 12, 12]}
-                intensity={100}
-                color={"#fafafa"}
+        <div className="relative w-[100%] h-[100%]">
+            <Image
+                src="/webgl/placeholder.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
             />
-            <Model />
-        </Canvas>
-    );
+            <p className="absolute text-neutral-700 text-xs text-center bottom-4 z-1 p-4">
+                This is a placeholder as your browser does not support WebGL.
+            </p>
+        </div>
+    )
 }
