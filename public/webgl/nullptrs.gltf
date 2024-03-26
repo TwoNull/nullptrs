@@ -1,0 +1,300 @@
+{
+    "asset": {
+        "copyright": "(C)2024 Leo Glass",
+        "generator": "maya2glTF main fbbc95e5dc4d",
+        "version": "2.0"
+    },
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0,
+    "nodes": [
+        {
+            "name": "svgMesh1",
+            "children": [
+                1
+            ],
+            "translation": [
+                -2.419907569885254,
+                -1.3430554866790772,
+                0.4075000286102295
+            ]
+        },
+        {
+            "name": "svgMesh1:PIV",
+            "mesh": 0,
+            "translation": [
+                -6.480092525482178,
+                -3.656944513320923,
+                -0.6075000166893005
+            ]
+        }
+    ],
+    "meshes": [
+        {
+            "name": "svgMeshShape1",
+            "extras": {
+                "targetNames": []
+            },
+            "primitives": [
+                {
+                    "attributes": {
+                        "COLOR_0": 1,
+                        "NORMAL": 2,
+                        "POSITION": 3,
+                        "TANGENT": 4,
+                        "TEXCOORD_0": 5
+                    },
+                    "indices": 0,
+                    "mode": 4,
+                    "material": 0
+                },
+                {
+                    "attributes": {
+                        "COLOR_0": 7,
+                        "NORMAL": 8,
+                        "POSITION": 9
+                    },
+                    "indices": 6,
+                    "mode": 4,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "name": "svgBlinn3",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [0.8, 0.8, 0.8, 1],
+                "metallicFactor": 0,
+                "roughnessFactor": 1
+            },
+            "emissiveFactor": [0, 0, 0],
+            "alphaMode": "OPAQUE",
+            "doubleSided": false
+        }
+    ],
+    "accessors": [
+        {
+            "name": "svgMeshShape1#0/indices",
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1260,
+            "max": [
+                425
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "svgMeshShape1#0/vertices/COLOR_0",
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 426,
+            "max": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "svgMeshShape1#0/vertices/NORMAL",
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 426,
+            "max": [
+                1.0,
+                0.9998433589935304,
+                0.0
+            ],
+            "min": [
+                -0.5317873954772949,
+                -0.9998403191566468,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "svgMeshShape1#0/vertices/POSITION",
+            "bufferView": 2,
+            "byteOffset": 5112,
+            "componentType": 5126,
+            "count": 426,
+            "max": [
+                9.10752296447754,
+                3.625889778137207,
+                0.6000000238418579
+            ],
+            "min": [
+                7.972222328186035,
+                2.4944443702697756,
+                0.20000000298023225
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "svgMeshShape1#0/vertices/TANGENT",
+            "bufferView": 1,
+            "byteOffset": 6816,
+            "componentType": 5126,
+            "count": 426,
+            "max": [
+                0.0001870809937827289,
+                0.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.0001116679995902814,
+                -1.0,
+                -1.0,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "svgMeshShape1#0/vertices/TEXCOORD_0",
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 426,
+            "max": [
+                0.9131349921226502,
+                0.9980079531669616
+            ],
+            "min": [
+                0.0018226250540465117,
+                0.001991986995562911
+            ],
+            "type": "VEC2"
+        },
+        {
+            "name": "svgMeshShape1#1/indices",
+            "bufferView": 0,
+            "byteOffset": 2520,
+            "componentType": 5123,
+            "count": 21768,
+            "max": [
+                7619
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "svgMeshShape1#1/vertices/COLOR_0",
+            "bufferView": 1,
+            "byteOffset": 13632,
+            "componentType": 5126,
+            "count": 7620,
+            "max": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "svgMeshShape1#1/vertices/NORMAL",
+            "bufferView": 2,
+            "byteOffset": 10224,
+            "componentType": 5126,
+            "count": 7620,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "svgMeshShape1#1/vertices/POSITION",
+            "bufferView": 2,
+            "byteOffset": 101664,
+            "componentType": 5126,
+            "count": 7620,
+            "max": [
+                12.960185050964356,
+                7.313889026641846,
+                0.6150000095367432
+            ],
+            "min": [
+                4.411110877990723,
+                2.4944443702697756,
+                0.0020000000949949028
+            ],
+            "type": "VEC3"
+        }
+    ],
+    "bufferViews": [
+        {
+            "name": "nullptrs/data/indices-2",
+            "buffer": 0,
+            "byteOffset": 332064,
+            "byteLength": 46056,
+            "target": 34963
+        },
+        {
+            "name": "nullptrs/data/vertices-16",
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 135552,
+            "byteStride": 16,
+            "target": 34962
+        },
+        {
+            "name": "nullptrs/data/vertices-12",
+            "buffer": 0,
+            "byteOffset": 135552,
+            "byteLength": 193104,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "name": "nullptrs/data/vertices-8",
+            "buffer": 0,
+            "byteOffset": 328656,
+            "byteLength": 3408,
+            "byteStride": 8,
+            "target": 34962
+        }
+    ],
+    "buffers": [
+        {
+            "name": "nullptrs/data",
+            "byteLength": 378120,
+            "uri": "nullptrs0.bin"
+        }
+    ]
+}

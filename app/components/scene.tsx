@@ -7,19 +7,19 @@ import { MathUtils } from "three";
 
 function Model() {
   const ref: { current: any | null } = useRef();
-  useFrame((state) => {
+  useFrame(() => {
     ref.current.rotation.y = MathUtils.lerp(
       ref.current.rotation.y,
-      (state.mouse.x * Math.PI) / -5,
+      ref.current.rotation.y + 0.08,
       0.1
     );
     ref.current.rotation.x = MathUtils.lerp(
       ref.current.rotation.x,
-      (state.mouse.y * Math.PI) / 5,
+      ref.current.rotation.x + 0.08,
       0.1
     );
   });
-  const gltf = useGLTF("/webgl/static.gltf", true);
+  const gltf = useGLTF("/webgl/nullptrs.gltf", true);
   return (
     <mesh ref={ref}>
       <primitive object={gltf.scene} dispose={null} scale={1} />
@@ -30,14 +30,13 @@ function Model() {
 
 export default function Scene() {
   return (
-    <Canvas style={{position: "absolute", zIndex: "0", width: "100vw", height: "100vh"}} color={"#e5e5e5"} camera={{ position: [0, 0, 20], near: 5, far: 30 }}>
+    <Canvas color={"#fafafa"} camera={{ position: [0, 0, 8], aspect: 1}}>
       <directionalLight
         castShadow
         position={[0, 12, 12]}
-        intensity={1}
-        color={"#e5e5e5"}
+        intensity={100}
+        color={"#fafafa"}
       />
-      <ambientLight intensity={0.4} color={"#e5e5e5"} />
       <Model />
     </Canvas>
   );
