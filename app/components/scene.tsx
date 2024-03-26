@@ -57,7 +57,7 @@ export default function Scene() {
                 objectFit="cover"
             />
             <p className="absolute text-neutral-700 text-xs text-center bottom-4 z-1 p-4">
-                This is a placeholder as your browser does not support WebGL.
+                This is a placeholder image as <a className="font-medium" href="https://support.biodigital.com/hc/en-us/articles/218322977-How-to-turn-on-WebGL-in-my-browser" target="_blank" rel="noopener noreferrer">your browser does not support WebGL.</a>
             </p>
         </div>
     )
